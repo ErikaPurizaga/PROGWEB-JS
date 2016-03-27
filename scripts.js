@@ -131,8 +131,7 @@ function numeroAlAzarHastaLimite (limite){
 console.log("Fin Programa");*/
 
 
-
-
+/*FUNCION MAXIMO ENTRE 2 NUMEROS*/
 /*console.log ("Inicio del Programa");
 document.write("Encontrar el maximo entre 2 numeros");
 var numero1  =prompt("Ingrese el primer numero ");
@@ -149,14 +148,8 @@ var numero2 =prompt("Ingrese el segundo numero");
 
 
 
-/*AMBITO DE LAS VARIABLES*/
-function saludo(){
-	var mensaje =" Hola a todos";
-	alert(mensaje);}
-	var mensaje ="chao";
-	saludo();
-	alert(mensaje);
-	saludo();
+
+
 
 
 
