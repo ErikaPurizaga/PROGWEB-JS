@@ -19,7 +19,7 @@ console.log("La longitud de la clave:" + clave.length);
 console.log("TA-DA!!! Su clave es:"+ clave.toUpperCase());
 console.log("El valor de la clave es:" + clave);*/
 
-/*Desafio Cuenta Cuentos - Concatenacion - CUENTA REGRESIVA DE PREGUNTAS*/
+/*Desafio Cuenta Cuentos - Concatenacion - CUENTA REGRESIVA DE PREGUNTAS
 console.log("Inicio del Programa");
 var preguntas = 3;
 var preguntasFaltantes = "Quedan " + preguntas + " preguntas";
@@ -34,5 +34,15 @@ var verbo =prompt("Ingresa un verbo en infinitivo! " + preguntasFaltantes);
 document.write("<h1>El "+ adjetivo + " "+ sustantivo + " queria " + verbo + " con sus amigos en el patio de su caleta");
 document.write("<h1>El "+ sustantivo + " "+ adjetivo + " queria " + verbo + " antes de pegarse un bañito");
 document.write("<h1>El "+ adjetivo + " "+ sustantivo + " queria " + verbo + " solo porque quería ser popular");
-console.log("Programa Completado")
+console.log("Programa Completado")*/
+/*random*/
+console.log("Inicio  del programa");
+var dado=Math.floor(Math.random()*6)+1;
+alert("Dado dice: "  + dado);
+
+var numero =prompt("Ingresa un numero entero ");
+var aleatorio=Math.floor(Math.random()*numero);
+alert("Aleatorio de 1 hasta "  + numero + " es " + aleatorio);
+console.log("Programa Completado");
+
 
