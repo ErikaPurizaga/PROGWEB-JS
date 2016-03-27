@@ -187,8 +187,18 @@ var limiteInf=prompt("Ingrese limite inferior:");
 var limiteSup=prompt("Ingrese limite Superior");
 alert("Su numero al Azar es:" + numeroAlAzarHastaLimite(parseInt(limiteInf), parseInt(limiteSup)));
 
+
+var contador =0;
+while(contador<10) //AGREGAMOS UN WHUILE CON CONTADOR MIENTRAS EL CONTADOR SEA MENOR QUE 10 VA A MOSTRAR 10 NUMEROS RANDON DNTRO DE LOS LIMITES
+{
+	var randomico= numeroAlAzarHastaLimite(parseInt(limiteInf), parseInt(limiteSup));
+	document.write(randomico + "  ");
+	contador++;
+}
 	
 console.log ("Fin del Programa");
+
+
 
 
 
