@@ -35,14 +35,30 @@ document.write("<h1>El "+ adjetivo + " "+ sustantivo + " queria " + verbo + " co
 document.write("<h1>El "+ sustantivo + " "+ adjetivo + " queria " + verbo + " antes de pegarse un bañito");
 document.write("<h1>El "+ adjetivo + " "+ sustantivo + " queria " + verbo + " solo porque quería ser popular");
 console.log("Programa Completado")*/
+
+
 /*random*/
-console.log("Inicio  del programa");
+/*console.log("Inicio  del programa");
 var dado=Math.floor(Math.random()*6)+1;
 alert("Dado dice: "  + dado);
 
 var numero =prompt("Ingresa un numero entero ");
 var aleatorio=Math.floor(Math.random()*numero);
 alert("Aleatorio de 1 hasta "  + numero + " es " + aleatorio);
-console.log("Programa Completado");
+console.log("Programa Completado");*/
+
+/*CONDICIONALES*/
+
+console.log ("Inicio del Programa");
+var numero = prompt("Ingrese un numero entre el 1 al 5:");
+var numeroAAdivinar=Math.floor(Math.random()*5);
+if (numero == numeroAAdivinar) {
+	alert (" Wow! Has adivinado el numero");
+}
+else
+{
+	alert ("Has Fracasado!!! buu!");
+}
+console.log ("Fin del Programa");
 
 
