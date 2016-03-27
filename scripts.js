@@ -19,30 +19,20 @@ console.log("La longitud de la clave:" + clave.length);
 console.log("TA-DA!!! Su clave es:"+ clave.toUpperCase());
 console.log("El valor de la clave es:" + clave);*/
 
-/*Desafio Cuenta Cuentos - Concatenacion
-var sustantivo =prompt("Hola ,Ingresa un sustantivo!");
-var adjetivo =prompt("Hola ,Ingresa un adjetivo!");
-var verbo =prompt("Hola ,Ingresa un verbo en infinitivo!");
+/*Desafio Cuenta Cuentos - Concatenacion - CUENTA REGRESIVA DE PREGUNTAS*/
+console.log("Inicio del Programa");
+var preguntas = 3;
+var preguntasFaltantes = "Quedan " + preguntas + " preguntas";
+
+var sustantivo =prompt("Hola ,Ingresa un sustantivo! " +  preguntasFaltantes);
+preguntas = preguntas-1;
+preguntasFaltantes = "Quedan " + preguntas + " preguntas";
+var adjetivo =prompt("Hola ,Ingresa un adjetivo! " +preguntasFaltantes);
+preguntas -= 1;
+preguntasFaltantes = "Quedan " + preguntas + " preguntas";
+var verbo =prompt("Ingresa un verbo en infinitivo! " + preguntasFaltantes);
 document.write("<h1>El "+ adjetivo + " "+ sustantivo + " queria " + verbo + " con sus amigos en el patio de su caleta");
 document.write("<h1>El "+ sustantivo + " "+ adjetivo + " queria " + verbo + " antes de pegarse un bañito");
-document.write("<h1>El "+ adjetivo + " "+ sustantivo + " queria " + verbo + " solo porque quería ser popular");*/
+document.write("<h1>El "+ adjetivo + " "+ sustantivo + " queria " + verbo + " solo porque quería ser popular");
+console.log("Programa Completado")
 
-/*NUMEROS-27/03*/
-
-/*var segundosPorMinuto=60;
-var minutosPorHora=60;
-var horasPorDia=24;
-var diasPorAño=365;
-var segundosPorDia=segundosPorMinuto*minutosPorHora*horasPorDia;
-var años = prompt("Ingrese sus años de vida:");
-var diasDeVida= diasPorAño*años;
-document.write("<h1>Días de Vida</h1><p> Usted ha vivido " + diasDeVida + " días hasta el presente año</p>"); 
-document.write("<h1>Calculadora del Tiempo</h1><p> Hay " + segundosPorDia + " segundos  en un dia</p>");*/
-
-/* Casting =camnbiar un tipo de dato string a numero con ParseInt*/
-console.log("Inicio de Programa")
-var peliculasVistas=prompt("Cuantas peliculas has visto este mes?");
-var seriesVistas=prompt("Cuantas series has visto este mes?");
-var tiempoPantalla=parseInt(peliculasVistas) + parseInt(seriesVistas);
-alert('Wow! Has visto ' + tiempoPantalla + " veces minimo la pantalla");
-console.log("Progrma Completado")
