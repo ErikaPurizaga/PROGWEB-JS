@@ -48,8 +48,7 @@ alert("Aleatorio de 1 hasta "  + numero + " es " + aleatorio);
 console.log("Programa Completado");*/
 
 /*CONDICIONALES*/
-
-console.log ("Inicio del Programa");
+/*console.log ("Inicio del Programa");
 var numero = prompt("Ingrese un numero entre el 1 al 5:");
 var numeroAAdivinar=Math.floor(Math.random()*5);
 if (numero == numeroAAdivinar) {
@@ -59,6 +58,56 @@ else
 {
 	alert ("Has Fracasado!!! buu!");
 }
+console.log ("Fin del Programa");*/
+
+
+
+/*MULTIPLES CONDICIONALES  IF-ELSEIF*/
+console.log ("Inicio del Programa");
+var adivionoCorrectamente=false;
+document.write ("<h1> ADIVINA EL NUMDERO!!</h1>");
+var numeroAAdivinar=Math.floor(Math.random()*10)+1;
+var numeroUsuario = prompt("Ingrese un numero entre el 1 al 10:");
+
+if (parseInt(numeroUsuario)== numeroAAdivinar){
+	alert ("Wow!!Has adivinado el numero");
+
+}
+ else{
+ 		
+ 		if(numeroAAdivinar>=numeroUsuario){
+		 			alert (" Me dijeron q el numero es mayor al que ingresaste intenta otra vez");
+		 			var numeroAAdivinar = prompt("Ingrese un numero entre el 1 al 10:");
+		 			if (parseInt(numeroUsuario)== numeroAAdivinar){
+						adivionoCorrectamente=true;
+						}
+					else
+					{
+						adivionoCorrectamente=false;
+					}
+ 			} 
+ 		else{
+	 			alert (" Me dijeron q el numero es menor al que ingresaste");
+	 			var numeroAAdivinar = prompt("Ingrese un numero entre el 1 al 10:");
+	 			if (parseInt(numeroUsuario)== numeroAAdivinar){
+					adivionoCorrectamente=true;
+					}
+				else
+				{
+					adivionoCorrectamente=false;
+				}
+ 			}
+ 		if(adivionoCorrectamente==true){
+ 			alert ("Wow!!Has adivinado el numero");
+ 			}
+ 		else{
+
+ 		alert ("Has Fracasado!!! buu!");
+			}	
+ }
+
 console.log ("Fin del Programa");
+
+
 
 
