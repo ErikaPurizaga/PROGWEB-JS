@@ -63,7 +63,7 @@ console.log ("Fin del Programa");*/
 
 
 /*MULTIPLES CONDICIONALES  IF-ELSEIF - Adivina el  numero con ayuda*/
-console.log ("Inicio del Programa");
+/*console.log ("Inicio del Programa");
 var adivinoCorrectamente=false;
 document.write ("<h1> ADIVINA EL NUMERO!!</h1>");
 var numeroAAdivinar=Math.floor(Math.random()*10)+1; // El numero a adivinar usa el metodo random entre numeros del 1 al 10 math.fllor es para que sena enteros
@@ -106,7 +106,60 @@ if (parseInt(numeroUsuario)== numeroAAdivinar){// comparacion entre el numero in
 			}	
  }
 
-console.log ("Fin del Programa");
+console.log ("Fin del Programa");*/
+
+/*FUNCIONES Y RETURN*/
+
+/*console.log ("Inicio del Programa");
+function tiraDados (){
+	var dado = Math.floor(Math.random()*6)+1;
+	return dado;//aumentamos return
+}
+alert("Tiramos 3 dados ");
+alert("El dado dice: "+ tiraDados);
+var multiplo = 2 * tiraDados();
+alert("El multiplo de bonus es : " +multiplo);*/
+
+
+/*ARGUMENTOS REN LAS FUNCIONES */
+/*console.log("Inicio Programa");
+function numeroAlAzarHastaLimite (limite){
+	var num=Math.floor(Math.random()*limite) + 1;
+	return num;}
+	var numAzar = numeroAlAzarHastaLimite(100) ;
+	alert( "El numero al azar es:" + numAzar);
+console.log("Fin Programa");*/
+
+
+
+
+/*console.log ("Inicio del Programa");
+document.write("Encontrar el maximo entre 2 numeros");
+var numero1  =prompt("Ingrese el primer numero ");
+var numero2 =prompt("Ingrese el segundo numero");
+
+	if (numero1< numero2){
+		
+		alert("El maximo entre los 2 numeros es " + numero2);
+	}
+	else {
+		alert("El maximo entre los 2 numeros es " +  numero1);
+		
+	}*/
+
+
+
+/*AMBITO DE LAS VARIABLES*/
+function saludo(){
+	var mensaje =" Hola a todos";
+	alert(mensaje);}
+	var mensaje ="chao";
+	saludo();
+	alert(mensaje);
+	saludo();
+
+
+
 
 
 
