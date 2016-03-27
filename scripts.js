@@ -149,13 +149,51 @@ var numero2 =prompt("Ingrese el segundo numero");
 
 
 /*AMBITO DE LAS VARIABLES*/
-function saludo(){
-	var mensaje =" Hola a todos";
-	alert(mensaje);}
-	var mensaje ="chao";
-	saludo();
+/*function saludo(){
+	 mensaje ="Hola a todos"; // VARIABLE GLOBAL SOBREVIVE DURANTE TODO EL CODIGO 
 	alert(mensaje);
-	saludo();
+}
+var mensaje ="chao";
+saludo();
+alert(mensaje);
+saludo();*/
+
+/* THROW EROR*/
+/*console.log("Inicio del Programa");
+var num="hola";
+if(isNaN(num))
+{
+	throw new Error("No es un numero valido");
+}
+else { num=num*0.5;}*/
+
+
+
+
+/*DESAFIO RANDOM ENTRE 2 NUMEROS CON FUNCION Y THROW WERROR*/
+
+console.log("Inicio del Programa");
+
+function numeroAlAzarHastaLimite (limiteInf , limiteSup){
+	if (isNaN(limiteInf)&& isNaN(limiteSup))
+	{
+		throw new Error ("It is not a number");
+	}
+	var num= Math.round(Math.random()*(limiteSup - limiteInf)) + limiteInf;
+	return num;
+}
+
+var limiteInf=prompt("Ingrese limite inferior:");
+var limiteSup=prompt("Ingrese limite Superior");
+alert("Su numero al Azar es:" + numeroAlAzarHastaLimite(parseInt(limiteInf), parseInt(limiteSup)));
+
+	
+console.log ("Fin del Programa");
+
+
+
+
+
 
 
 
