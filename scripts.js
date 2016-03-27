@@ -172,17 +172,17 @@ else { num=num*0.5;}*/
 
 /*DESAFIO RANDOM ENTRE 2 NUMEROS CON FUNCION Y THROW WERROR*/
 
-console.log("Inicio del Programa");
+/*console.log("Inicio del Programa");
 
 function numeroAlAzarHastaLimite (limiteInf , limiteSup){
 	if (isNaN(limiteInf)&& isNaN(limiteSup))
 	{
 		throw new Error ("It is not a number");
 	}
-	var num= Math.round(Math.random()*(limiteSup - limiteInf)) + limiteInf;
+	var num= Math.round(Math.random()*(limiteSup - limiteInf)) + limiteInf;// Resta los limites superior e inferior y al resultado le suma el limte superior
 	return num;
 }
-
+//Primero declaro la funcion y lo que realizo ene ella y luego las variables a usar en la funcion 
 var limiteInf=prompt("Ingrese limite inferior:");
 var limiteSup=prompt("Ingrese limite Superior");
 alert("Su numero al Azar es:" + numeroAlAzarHastaLimite(parseInt(limiteInf), parseInt(limiteSup)));
@@ -191,12 +191,45 @@ alert("Su numero al Azar es:" + numeroAlAzarHastaLimite(parseInt(limiteInf), par
 var contador =0;
 while(contador<10) //AGREGAMOS UN WHUILE CON CONTADOR MIENTRAS EL CONTADOR SEA MENOR QUE 10 VA A MOSTRAR 10 NUMEROS RANDON DNTRO DE LOS LIMITES
 {
-	var randomico= numeroAlAzarHastaLimite(parseInt(limiteInf), parseInt(limiteSup));
+	var randomico= numeroAlAzarHastaLimite(parseInt(limiteInf), parseInt(limiteSup)); // usamos la funcion anteriormente declarada con los 2 limites convirtiendolos en enteros
 	document.write(randomico + "  ");
-	contador++;
+	contador++;// se aumenta el contador en cada vuelta +1
 }
 	
-console.log ("Fin del Programa");
+console.log ("Fin del Programa");*/
+
+
+
+
+
+/*DESAFIO ADIVINA  ADIVINADOR*/
+
+console.log("Inicio Programa");
+alert("Soy capaz de adivinar el numero que estas pensado con el minimo numero de intentos posibles!!!!!");
+
+function RandomNumber(limite){
+	return Math.floor(Math.random()*limite) + 1;
+   }
+ var cont=0;
+ var NumeroAAdivinar= RandomNumber(100);
+  while(true)
+  {
+  	var randomico= RandomNumber(100);
+  	cont++;
+
+  	if (randomico == NumeroAAdivinar){
+  	alert (" El numero es:"+ randomico );	
+  		break;
+  	}
+
+  }
+  
+  alert (" El numero que estas pensando  es : " + NumeroAAdivinar + " con " + cont + " intentos ")
+
+
+console.log("Fin de Programa");
+
+
 
 
 
