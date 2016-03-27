@@ -62,42 +62,42 @@ console.log ("Fin del Programa");*/
 
 
 
-/*MULTIPLES CONDICIONALES  IF-ELSEIF*/
+/*MULTIPLES CONDICIONALES  IF-ELSEIF - Adivina el  numero con ayuda*/
 console.log ("Inicio del Programa");
-var adivionoCorrectamente=false;
-document.write ("<h1> ADIVINA EL NUMDERO!!</h1>");
-var numeroAAdivinar=Math.floor(Math.random()*10)+1;
+var adivinoCorrectamente=false;
+document.write ("<h1> ADIVINA EL NUMERO!!</h1>");
+var numeroAAdivinar=Math.floor(Math.random()*10)+1; // El numero a adivinar usa el metodo random entre numeros del 1 al 10 math.fllor es para que sena enteros
 var numeroUsuario = prompt("Ingrese un numero entre el 1 al 10:");
 
-if (parseInt(numeroUsuario)== numeroAAdivinar){
+if (parseInt(numeroUsuario)== numeroAAdivinar){// comparacion entre el numero ingresado y el numero aleatorioa a adivinar
 	alert ("Wow!!Has adivinado el numero");
 
 }
  else{
  		
- 		if(numeroAAdivinar>=numeroUsuario){
+ 		if(numeroAAdivinar>=numeroUsuario){//numero a adivinar mayor o igual al numero ingresado por el usuario
 		 			alert (" Me dijeron q el numero es mayor al que ingresaste intenta otra vez");
-		 			var numeroAAdivinar = prompt("Ingrese un numero entre el 1 al 10:");
-		 			if (parseInt(numeroUsuario)== numeroAAdivinar){
-						adivionoCorrectamente=true;
+		 			var numeroAAdivinar = prompt("Ingrese un numero entre el 1 al 10:");//ingresar numero entre el 1 al 10
+		 			if (parseInt(numeroUsuario)== numeroAAdivinar){// comparacion entre el numero ingresado y el numero aleatorioa a adivinar
+						adivinoCorrectamente=true;//el usuario acerto el numero
 						}
 					else
 					{
-						adivionoCorrectamente=false;
+						adivinoCorrectamente=false;//el usuario no acerto el numero
 					}
  			} 
- 		else{
+ 		else{ //caso contrario numero a adivinar mayor o igual al numero ingresado por el usuario es decir menor
 	 			alert (" Me dijeron q el numero es menor al que ingresaste");
-	 			var numeroAAdivinar = prompt("Ingrese un numero entre el 1 al 10:");
-	 			if (parseInt(numeroUsuario)== numeroAAdivinar){
-					adivionoCorrectamente=true;
+	 			var numeroAAdivinar = prompt("Ingrese un numero entre el 1 al 10:");//ingresar numero entre el 1 al 10
+	 			if (parseInt(numeroUsuario)== numeroAAdivinar){// comparacion entre el numero ingresado y el numero aleatorioa a adivinar
+						adivinoCorrectamente=true;//el usuario acerto el numero
 					}
 				else
 				{
-					adivionoCorrectamente=false;
+					adivinoCorrectamente=false;//el usuario no acerto el numero
 				}
  			}
- 		if(adivionoCorrectamente==true){
+ 		if(adivinoCorrectamente==true){
  			alert ("Wow!!Has adivinado el numero");
  			}
  		else{
